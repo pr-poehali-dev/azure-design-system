@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Newspaper, Users, CalendarDays, Building2 } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Новости города",
+    description: "Главные события дня — оперативно и без искажений. Всё, что важно знать о вашем городе прямо сейчас.",
+    icon: Newspaper,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Люди и истории",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Интервью и репортажи о тех, кто меняет город к лучшему. Реальные судьбы за громкими заголовками.",
+    icon: Users,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Афиша и досуг",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Куда сходить и что посмотреть на выходных. Обзоры мест, событий и заведений города.",
+    icon: CalendarDays,
   },
   {
-    title: "Градостроительство",
+    title: "Городская среда",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Транспорт, благоустройство, ЖКХ и урбанистика. Разбираемся, как устроен город и куда он движется.",
+    icon: Building2,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши рубрики</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Темы</HighlightedText>, которые
             <br />
-            практикой
+            важны городу
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Мы пишем о том, что происходит вокруг — от больших городских событий до маленьких историй у вашего дома.
           </p>
         </div>
 
